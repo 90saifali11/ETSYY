@@ -54,6 +54,15 @@ nav {
     
 }
 
+@media (max-width:1000px){
+   .n2{
+    visibility: hidden;
+   }
+   .i{
+    visibility: hidden;
+   }
+  
+}
 nav > span{
     flex-wrap: wrap;
     display: flex;
@@ -144,6 +153,11 @@ top: 10px; left: 200px;
      left: 9px;
       }
   }
+  @media (max-width: 1000px){
+    .src{
+        width: 200px;
+    }
+  }
 .like{
     position: relative;
     top:20px;
@@ -178,6 +192,7 @@ h1{
     justify-content: space-evenly;}
 
 .img2{
+    border: 1px solid white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -229,84 +244,9 @@ h1{
    font-family:"PT";
     font-weight: normal;
 }
-@media(max-width:1000px){
-    #d2{
-        flex-direction: column;
-    }
-    .img3{
-        width: 95%;
-        margin:0px auto;
-        border-color: grey;
-        flex-direction: row;
-        padding: 0px;
-    }
-    .img3>img{
-        height: 100%;
-        width: 90%;
-    }
-    .img3>i{
-        margin-top: 0px;
-        padding-left: 12px;
 
-    }
-    .img3:hover{
-        box-shadow: 1px 1px 2px;
-        transform: scale(1.02);
-        transition: 0.5s;
-    }
-}
-@media(max-width:1000px){
-    #d3{
-        flex-direction: column;
-    }
-    .img4{
-        width: 95%;
-        margin:0px auto;
-        border-color: grey;
-        flex-direction: row;
-        padding: 0px;
-    }
-    .img4>img{
-        height: 100%;
-        width: 90%;
-    }
-    .img4>i{
-        margin-top: 0px;
-        padding-left: 12px;
 
-    }
-    .img4:hover{
-        box-shadow: 1px 1px 2px;
-        transform: scale(1.02);
-        transition: 0.5s;
-    }
-}
-@media(max-width:1000px){
-    #d4{
-        flex-direction: column;
-    }
-    .img5{
-        width: 95%;
-        margin:0px auto;
-        border-color: grey;
-        flex-direction: row;
-        padding: 0px;
-    }
-    .img5>img{
-        height: 100%;
-        width: 90%;
-    }
-    .img5>i{
-        margin-top: 0px;
-        padding-left: 12px;
 
-    }
-    .img5:hover{
-        box-shadow: 1px 1px 2px;
-        transform: scale(1.02);
-        transition: 0.5s;
-    }
-}
 #d2{
     display: flex;
     justify-content: space-evenly;
@@ -317,12 +257,11 @@ h1{
 left: -10px;
 }
 
-/* Individual image container styling */
 .img3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid transparent;
+    border: 1px solid white;
     border-radius: 8px;
     margin: 10px; /* Add margin for spacing */
 }
@@ -350,7 +289,33 @@ left: -10px;
     display: block;
     font-family: sans-serif;
 }
-
+@media (max-width: 1000px){
+    #d2{
+        flex-direction: column;
+        margin-left: -500px;
+    }
+        .img3{
+            height: 90px;
+            width: 95%;
+            margin:0px auto;
+            border-color: grey;
+            flex-direction: row;
+            padding: 10px;
+        }
+        .img3 img{
+            height: 100%;
+            width: 90px;
+        }
+        .img3 i{
+            margin-top: 0px;
+            padding-left: 5px;
+    
+        }
+        .img3{flex-direction: row;
+         border: 1px solid black;
+           
+        }
+}
 
 #d3 {
     display: flex;
@@ -420,12 +385,37 @@ left: -10px;
 h2{
     display: block;
     font-family: serif;
-        text-align: center; /* Center the text */
-        display: block; /* Ensure it's on a new line */
-        margin-top: 20px; /* Adjust the margin for spacing */
-    
-    
+        text-align: center; 
+        display: block; 
+        margin-top: 20px; 
 }
+@media(max-width:1000px){
+    #d3 {
+        flex-direction: column;
+    }
+
+    .img4 {
+        display: flex;
+        align-items: center;
+        height: 90px;
+        width: 95%;
+        margin: 0 auto;
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    .img4 img {
+        margin-left: -400px;
+        height: 100%;
+        width: 90px;
+    }
+
+    .img4 i {
+        margin-top: 0;
+       flex-direction: row;
+    }
+}
+
 #d4 {
     display: flex;
     justify-content: space-evenly;
@@ -497,6 +487,33 @@ h6{
 }
 .img5{
     overflow: hidden;
+}
+@media (max-width: 1000px){
+    #d4{
+        flex-direction: column;
+    }
+    .img5{
+        justify-content: center;
+        width: 95%;
+        margin:10px auto;
+        border-color: grey;
+        flex-direction: row;
+        padding: 0px;
+    }
+    .img5>img{
+        height: 100%;
+        width: 90%;
+    }
+    .img5>i{
+        margin-top: 0px;
+        padding-left: 12px;
+
+    }
+    .img5:hover{
+        box-shadow: 1px 1px 2px;
+        transform: scale(1.02);
+        transition: 0.5s;
+    }
 }/* d5*/
 #d5 {
     display: flex;
